@@ -1,0 +1,63 @@
+/* less循环样式 */
+@rem: 1px;
+.for(@i) when (@i<=20) {
+  @size: @i * 2;
+  .for(@i + 1);
+  .mall_@{size} {
+    margin: @size * @rem;
+  }
+  .mh_@{size} {
+    margin-left: @size * @rem;
+    margin-right: @size * @rem;
+  }
+  .ml_@{size} {
+    margin-left: @size * @rem;
+  }
+  .mr_@{size} {
+    margin-right: @size * @rem;
+  }
+  .mv_@{size} {
+    margin-top: @size * @rem;
+    margin-bottom: @size * @rem;
+  }
+  .mt_@{size} {
+    margin-top: @size * @rem;
+  }
+  .mb_@{size} {
+    margin-bottom: @size * @rem;
+  }
+
+  .pall_@{size} {
+    padding: @size * @rem;
+  }
+  .pl_@{size} {
+    padding-left: @size * @rem;
+  }
+  .pr_@{size} {
+    padding-right: @size * @rem;
+  }
+  .pt_@{size} {
+    padding-top: @size * @rem;
+  }
+  .pb_@{size} {
+    padding-bottom: @size * @rem;
+  }
+  .ph_@{size} {
+    padding-left: @size * @rem;
+    padding-right: @size * @rem;
+  }
+  .pv_@{size} {
+    padding-top: @size * @rem;
+    padding-bottom: @size * @rem;
+  }
+  .fs_@{size} {
+    font-size: @size * @rem;
+  }
+  .lh_@{size} {
+    line-height: @size * @rem;
+  }
+  .br_@{size} {
+    border-radius: @size * @rem;
+  }
+}
+.for(2);
